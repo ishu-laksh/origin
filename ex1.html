@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>day 3 ex1</title>
+    <style>
+        div{
+            height:300px;
+            width:400px;
+            text-align:center;
+            /*float:left;
+            position:relative;*/
+            margin:3px;
+            border:solid 1px green;
+            /*background-color:royalblue*/
+        }
+        #div1 {
+            /*background:linear-gradient(red,orange);*/
+            background: radial-gradient(darkblue 25%,royalblue 50%,green 100%);
+        }
+        #div2{
+            /*background:linear-gradient(green,yellow);*/
+            background:repeating-radial-gradient(pink 5%,deeppink 10%);
+            box-shadow:maroon 2px 3px 5px;
+        }
+        #div3 {
+            /*background:linear-gradient(to right,aqua,bisque);*/
+            /*background:repeating-linear-gradient(aqua 5%,bisque 10%);*/
+            border:30px solid;
+            text-shadow:blue 2px 3px 5px;
+            /*transform:rotate(45deg);*/
+            /*transform:skewX(20deg);*/
+            transform:skewY(20deg);
+            text-transform:lowercase;
+            border-image:url('border.png') 30 round;
+        }
+        #div4{
+            background-color:bisque;
+            border:black 2px solid;
+            animation:myanimation 5s infinite;
+
+        }
+        @-webkit-keyframes myanimation
+        {
+            from {
+                background-color: blue;
+                left: 20px;
+                top: 0px;
+            }
+            to {
+                background-color: yellow;
+                left: 100px;
+                top: 20px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div id="div1">
+        <h1>Div 1</h1>
+    </div>
+    <div id="div2">
+        <h1>Div 2</h1>        
+    </div>
+    <div id="div3">
+        <h1>Div 3</h1>
+    </div>
+    <div id="div4">
+        <h1>Div4</h1>
+    </div>
+    <summary>
+        Hello..let us summarize!
+        <details>
+            How to take leave?!!!!!!!
+        </details>
+    </summary>
+    <video controls height="350" width="200">
+        <source src="samp.mp4" />
+    </video>
+</body>
+</html>
